@@ -3,6 +3,6 @@ import { renderHomePage } from '../controllers/index.controller.js';
 
 const router = Router();
 
-router.get('/', renderHomePage);
+router.get('/home', renderHomePage);
 
 export default router;
