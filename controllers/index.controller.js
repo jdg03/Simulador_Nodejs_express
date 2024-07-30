@@ -1,4 +1,4 @@
 export const renderHomePage = (req, res) => {
-    res.render('index', { title: 'Home' });
+    res.render('index');
   };
   

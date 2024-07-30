@@ -1,3 +1,74 @@
 body{
-    background-color: rgb(255, 165, 165);
+ 
+    background-image: linear-gradient(
+    rgb(0, 0, 0),          
+    rgb(22, 55, 189), 
+    rgb(0, 0, 0) 99.8%      
+  );
+    padding: 0;
+
+    
+    font-family: "IBM Plex Sans", sans-serif !important;
+    color:#fff !important;
+}
+
+
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    
+    padding: 10px;
+  }
+
+  .grid-item {
+    
+   
+    color: aliceblue;
+    padding: 100px;
+    font-size: 30px;
+   
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .grid-item h1{
+     display: flex;
+     justify-content: center;
+  }
+
+  .grid-item p{
+    display: flex;
+    justify-content: center;
+ }
+
+ .boton{
+    
+    display: inline-block;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 9px 22px;
+    font-size: 22px;
+    height: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    background: linear-gradient(90deg,#5522fa 0,#0b00e4 100%);
+    border-radius: 50px;
+    transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    width: auto; 
+    text-decoration: none;
+    
+ }
+
+ .boton:hover{
+    box-shadow: 0 0 0 0.15rem #f4f7f6;
 }

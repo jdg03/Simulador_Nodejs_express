@@ -1,18 +1,40 @@
-<nav class="menum navbar navbar-dark bg-dark navbar-expand-md justify-content-center fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-      <ul class="topBotomBordersOut navbar-nav mx-auto text-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
+<style>
+  .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.1) !important; /* Fondo negro con 10% de transparencia */
+    color: white;
+    padding: 1% !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-custom .nav-link {
+    color: white;
+    text-decoration: none; /* Remueve el subrayado */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-custom .nav-link:hover {
+    color: #cccccc; /* Color del texto al pasar el cursor */
+    transform: scale(1.1);
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .botones {
+    display: flex;
+    gap: 1rem; /* Espacio uniforme entre los botones */
+  }
+</style>
+
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <a class="nav-link" href="/home">Inicio</a>
+    <div class="botones">
+      <a class="nav-link" href="/about">Sobre nosotros</a>
+      <a class="nav-link" href="/contact">Contacto</a>
     </div>
   </div>
 </nav>

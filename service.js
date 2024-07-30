@@ -3,7 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import indexRouter from './routes/index.routes.js';
 import aboutRouter from './routes/about.routes.js';
-import contactRouter from './routes/contact.routes.js';
+import contactRouter from './routes/contact.routes.js'
+import { simulatorRouter } from './routes/simulator.routes.js';
 
 // Configuración para poder usar __dirname con ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -22,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(indexRouter);
 app.use(aboutRouter);
 app.use(contactRouter);
-
+app.use(simulatorRouter);
 
 // Iniciar el servidor
 const PORT = process.env.PORT || 3000;
